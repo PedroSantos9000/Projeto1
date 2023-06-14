@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tela de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-position: top;
+            background-image: url(https://images4.alphacoders.com/130/1308321.jpeg);
+            
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Tela de Registro</h2>
+  <form action="processar_registro.php" method="post">
+    <label for="username">Nome de Usuário:</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+    
+    <label for="password">Senha:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="phone">Número de Telefone:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+    
+    <input type="submit" value="Registrar">
+  </form>
+        <div id="registerError" class="error"></div>
+        
+  
+  <a href="index.html"> <p>Já possui conta? </p></a>
+    </div>
+</body>
+</html>
+        
